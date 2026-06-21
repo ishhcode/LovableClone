@@ -21,7 +21,7 @@ public class UsageController {
     public ResponseEntity<TodayUsageResponse> getTodayUsage(){
 
         Long userId = 1L;
-        return ResponseEntity.ok(usageService.getTodaySErviceUser(userId));
+        return ResponseEntity.ok(usageService.getTodayServiceUser(userId));
     }
 
     @GetMapping("/limits")

@@ -43,7 +43,7 @@ public class ProjectMemberController {
         return ResponseEntity.ok(projectMemberService.UpdateMemberRole(projectId,memberId, request, userId));
     }
 
-    @DeleteMapping("/{memberId}")
+    @DeleteMapping("/{deleteMemberId}")
     public ResponseEntity<MemberResponse> deleteProjectMember(
             @PathVariable Long projectId,
             @PathVariable Long memberId
